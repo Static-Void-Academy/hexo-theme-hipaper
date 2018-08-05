@@ -10,7 +10,7 @@
 
             <% if (post.photos != ""){ %>
               <div class="widget-entry-thumbnail">
-                <a href="<%- url_for(post.path) %>" title="<% post.title %>"><img width="50" height="50" src="<%= post.photos[0] %>" class="attachment-thumb-small size-thumb-small wp-post-image" alt="preview-16" title="<% post.title %>"></a>
+                <a href="<%- url_for(post.path) %>" title="<% post.title %>"><img width="50" height="50" src="<%= url_for(post.path) + "/" + post.photos[0] %>" class="attachment-thumb-small size-thumb-small wp-post-image" alt="preview-16" title="<% post.title %>"></a>
               </div>
               <div class="widget-entry-summary">
             <% } else { %>
