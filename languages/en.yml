@@ -21,7 +21,8 @@ rss_feed: RSS Feed
 category: Category
 tag: Tag
 connect: 'Connect With Me'
-post_total_count: There are %d posts in total till now.
+post_total_count_one: There is %d post.
+post_total_count: There are %d posts.
 read_more: Continue Reading →
 contents: Contents
 none: None
