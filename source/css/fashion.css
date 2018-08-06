@@ -646,10 +646,12 @@ object {
 	color: #d6d6d6;
 	}
 .entry-thumbnail {
-	margin: 0 0 20px;
+	margin: 0 0 10px;
 	}
 .entry-thumbnail img {
 	display: block;
+  float: left;
+  margin-right: 20px;
 	}
 .entry-content {
 	margin: 0 0 30px;
