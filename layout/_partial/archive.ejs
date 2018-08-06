@@ -4,7 +4,16 @@
   <% }) %>
 <% } else { %>
   <% if (is_archive()){ %>
-    <div class="archives-tags-wrap"><blockquote><span><%= __('post_total_count', site.posts.length) %></span></blockquote>
+    <div class="archives-tags-wrap">
+      <blockquote>
+        <span>
+          <% if (site.posts.length == 1){ %>
+            <%= __('post_total_count_one', site.posts.length) %>
+          <% } else { %>
+            <%= __('post_total_count', site.posts.length) %>
+          <% } %>
+        </span>
+      </blockquote>
   <% } %>
   <% var last; %>
   <% page.posts.each(function(post, i){ %>
