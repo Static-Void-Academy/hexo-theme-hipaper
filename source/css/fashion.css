@@ -658,6 +658,7 @@ object {
 	}
 .entry-summary {
 	margin: 0 0 30px;
+  font-size: 1.1em;
 	}
 .entry-footer {
 	clear: both;
