@@ -71,7 +71,7 @@
     font-weight: bold;
     a
       color: #333;
-      text-decoration: underline;
+      text-decoration: none
 
 .article-title
   text-decoration: none
@@ -81,7 +81,7 @@
   transition: color 0.2s
   a&:hover
     color: color-theme
-    text-decoration: none;
+    text-decoration: none
 
 .article-entry
   @extend $base-style
@@ -90,9 +90,12 @@
   padding: 0
   p, table
     line-height: line-height
-    margin: 0.5em 0
-    font-size: 1.6em
-    font-family: serif
+    margin: 1.10em 0
+    font-size: font-size
+    font-family: 'Cormorant Garamond', serif
+    font-weight: 550
+    font-style: normal
+    letter-spacing: -.01em
   h1, h2, h3, h4, h5, h6
     font-weight: bold
   h1, h2, h3, h4, h5, h6
@@ -105,8 +108,14 @@
       color: color-theme
       text-decoration: none
   ul, ol, dl
+    font-size: bullet-size
+    font-family: 'Cormorant Garamond', serif
+    font-weight: 550
+    font-style: normal
+    letter-spacing: -.006em
     margin-top: line-height
     margin-bottom: line-height
+    padding-left: 15px;
   img, video
     max-width: 100%
     height: auto
@@ -143,9 +152,11 @@
       margin-right: -0.8em
       margin-top: -1.5em
     p
-      font-size: font-size
+      font-size: block-quote-size
+      font-family: 'Montserrat', sans-serif
+      font-weight: 100
     footer
-      font-size: font-size
+      font-size: block-quote-size
       margin: line-height 0
       font-family: font-sans
       cite
@@ -392,7 +403,7 @@ $article-share-link
 .article-gallery
   background: #000
   position: relative
-  margin-bottom: 40px
+  margin-bottom: 10px
 
 .article-gallery-photos
   position: relative
@@ -489,7 +500,7 @@ $article-gallery-ctrl
     color: color-black
 
 .nav-link
-  font-family: font-futura-pt
+  font-family: font-oswald
   color: color-link
   padding 1px !important
   &:hover

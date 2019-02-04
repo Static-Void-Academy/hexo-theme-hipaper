@@ -16,7 +16,7 @@ rss: /atom.xml
 keywords: blog, food, cooking, chef, recipe, recipes, alcohol, drinks, dishes, cuisine, baking, dessert, coffee, tea
 
 # Put your favicon.ico into `hexo-site/themes/hipaper/source/` directory.
-favicon: css/images/favicon.svg
+favicon: css/images/favicon.ico
 
 
 # Put your avatar.jpg into `hexo-site/themes/hipaper/source/` directory.
@@ -51,7 +51,7 @@ widgets:
 social:
   Instagram: https://www.instagram.com/gastro.nomist/
   Yelp: https://www.yelp.com/user_details?userid=lZDHsHFHqtEnB8VQF9gUYw
-  TripAdvisor: https://www.tripadvisor.com/members/Y6191HFmichaelt
+  TripAdvisor: https://www.tripadvisor.com/Profile/mikeyvxt
   Google: mailto:the.ig.gastronome@gmail.com
 
 # Search

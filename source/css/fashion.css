@@ -51,7 +51,9 @@ h6 {
 	font-size: 10px;
 	font-size: 1rem;
 	}
-
+p {
+	font-family: 'Aleo', serif;
+}
 
 /* Links */
 a {
@@ -75,6 +77,17 @@ blockquote p {
 dd {
 	margin-bottom: 1em;
 	}
+
+/* Figures */
+figure {
+  display: inline-block;
+}
+figure img {
+  vertical-align: top;
+}
+figure figcaption {
+  text-align: center;
+}
 
 /* Forms */
 select,
@@ -466,7 +479,7 @@ object {
 #main-navigation li.current-page-parent > a,
 #main-navigation li.current-page-ancestor > a,
 #main-navigation li.current_page_ancestor > a {
-	color: #c71f16;
+	color: #0061ff;
 	}
 #main-navigation li:hover li a,
 #main-navigation li.sfHover li a {
@@ -615,7 +628,7 @@ object {
 	text-decoration: none;
 	}
 .entry-title a:hover {
-	color: #c71f16;
+	color: #0061ff;
 	}
 .entry-meta {
 	color: #a6a6a6;
@@ -827,7 +840,7 @@ body.search .page .entry-footer {
 	border: none;
 	}
 .site-content .post-navigation a:hover {
-	color: #c71f16;
+	color: #0061ff;
 	background: none;
 	border: none;
 	}
@@ -904,7 +917,7 @@ body.search .page .entry-footer {
 	text-decoration: none;
 	}
 .comment-list li.comment .comment-author .fn a:hover {
-	color: #c71f16;
+	color: #0061ff;
 	}
 .comment-list li.comment .comment-metadata {
 	margin: 0 0 3px;
@@ -1002,7 +1015,7 @@ body.search .page .entry-footer {
 	color: #333;
 	}
 .widget li a:hover {
-	color: #c71f16;
+	color: #0061ff;
 	}
 .widget-tab-nav {
 	border-bottom: 2px solid #333;
@@ -1011,8 +1024,11 @@ body.search .page .entry-footer {
     margin-bottom: 10px
 
 /* Widget Tabs */
+ul#widget-tab {
+  margin: 0;
+}
 ul.widget-tab-nav {
-	margin: 0 0 15px;
+  margin: 0;
 	border-bottom: 3px solid #333;
 	*zoom: 1;
 	}
@@ -1152,7 +1168,7 @@ ul.widget-tab-nav {
 	background: #333;
 	}
 .widget-social-icons li a:hover [class^="fa"]:before {
-	background: #c71f16;
+	background: #0061ff;
 	}
 
 /* Widget Flickr */
@@ -1241,7 +1257,7 @@ ul.widget-tab-nav {
 	background: none;
 	}
 .site-extra .widget-social-icons li a:hover [class^="ico-"]:before {
-	color: #c71f16;
+	color: #0061ff;
 	}
 
 /* FOOTER
@@ -1260,7 +1276,7 @@ ul.widget-tab-nav {
 	text-decoration: none;
 	}
 .site-footer a:hover {
-	color: #c71f16;
+	color: #0061ff;
 	}
 .site-info {
 	float: left;
