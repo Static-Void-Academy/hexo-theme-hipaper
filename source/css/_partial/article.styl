@@ -55,6 +55,38 @@
   display: inline
   margin: 0
 
+.facebook-share:before
+  font-family: "FontAwesome"
+  content: "\f082"
+  color: #333
+  font-size: 1.3em
+  margin-left: 5px
+  &:hover
+    color: color-theme
+
+.twitter-share:before
+  font-family: "FontAwesome"
+  content: "\f099"
+  color: #333
+  font-size: 1.3em
+  margin-left: 5px
+  &:hover
+    color: color-theme
+
+.pinterest-share:before
+  font-family: "FontAwesome"
+  content: "\f0d2"
+  color: #333
+  font-size: 1.3em
+  margin-left: 5px
+
+.reddit-share:before
+  font-family: "FontAwesome"
+  content: "\f281"
+  color: #333
+  font-size: 1.3em
+  margin-left: 5px
+
 .ico-folder:before
   font-family: "FontAwesome"
   content: "\f07c"
@@ -226,7 +258,7 @@
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   &:hover
-    color: color-default
+    color: color-theme
     text-decoration: none
 
 .article-footer
@@ -504,7 +536,7 @@ $article-gallery-ctrl
   color: color-link
   padding 1px !important
   &:hover
-    color: color-black
+    color: color-theme
 
 .nav-child
   margin-left 1.0em
