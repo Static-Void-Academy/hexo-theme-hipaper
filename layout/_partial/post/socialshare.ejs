@@ -1,19 +1,17 @@
-<div>
-  <span>Share:</span>
-  <a href="https://www.facebook.com/sharer/sharer.php?u=<%- post.permalink %>">
-    <span class="facebook-share"></span>
-  </a>
-  <a href="https://twitter.com/intent/tweet?text=<%- post.title %>&url=<%- post.permalink %>">
-    <span class="twitter-share"></span>
-  </a>
-  <% if (post.photos != "" && typeof post.photos != "undefined") { %>
-    <a href="https://pinterest.com/pin/create/button/?url=<%- post.permalink %>&description=<%- post.title %>&media=<%= post.permalink + post.photos[0] %>">
-  <% } else { %>
-    <a href="https://pinterest.com/pin/create/button/?url=<%- post.permalink %>&description=<%- post.title %>">
-  <% } %>
-    <span class="pinterest-share"></span>
-  </a>
-  <a href="http://www.reddit.com/submit?url=<%- post.permalink %>&title=<%- post.title %>">
-    <span class="reddit-share"></span>
-  </a>
-</div>
+<span>Share:</span>
+<a href="https://www.facebook.com/sharer/sharer.php?u=<%- post.permalink %>">
+  <span class="facebook-share"></span>
+</a>
+<a href="https://twitter.com/intent/tweet?text=<%- post.title %>&url=<%- post.permalink %>">
+  <span class="twitter-share"></span>
+</a>
+<% if (post.photos != "" && typeof post.photos != "undefined") { %>
+  <a href="https://pinterest.com/pin/create/button/?url=<%- post.permalink %>&description=<%- post.title %>&media=<%= post.permalink + post.photos[0] %>">
+<% } else { %>
+  <a href="https://pinterest.com/pin/create/button/?url=<%- post.permalink %>&description=<%- post.title %>">
+<% } %>
+  <span class="pinterest-share"></span>
+</a>
+<a href="http://www.reddit.com/submit?url=<%- post.permalink %>&title=<%- post.title %>">
+  <span class="reddit-share"></span>
+</a>
