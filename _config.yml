@@ -48,9 +48,10 @@ widgets:
 # Value is the target link (E.g. GitHub: https://github.com/iTimeTraveler)
 social:
   GitHub: https://github.com/Static-Void-Academy
-  Medium: https://medium.com/static-void-academy
+  Youtube: https://www.youtube.com/channel/UCD9Vpco6dO5GfYOSmipwlvg
   Graduation-Cap: https://sva.thinkific.com
   Code: https://staticvoid.dev
+  Medium: https://medium.com/static-void-academy
 
 # Search
 search:
