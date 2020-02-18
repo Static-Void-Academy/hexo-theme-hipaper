@@ -108,6 +108,10 @@ $line-numbers
   color: #666
   font-size: 0.85em
 
+figure.highlight {
+  width: 100%
+}
+
 figure.highlight::-webkit-scrollbar {
   width:10px;
   height:10px;
@@ -133,8 +137,11 @@ figure.highlight::-webkit-scrollbar-track { /*滚动条里面轨道*/
     background: rgba(208,211,248,0.2)
     color: color-default
     padding: 0 0.3em
+    font-size: 18px
   pre
     @extend $code-block
+    font-size: 14px
+    width: 100%
     code
       background: none
       text-shadow: none
@@ -170,6 +177,7 @@ figure.highlight::-webkit-scrollbar-track { /*滚动条里面轨道*/
       color: #aaaaaa;
       text-align: right
       padding-right: 15px
+      font-size: 14px
     .line
       height: 1.7em
       line-height: 1.7em
