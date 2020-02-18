@@ -11,22 +11,20 @@ menu:
   About: about
 rss: /atom.xml
 
-
 # Set default keywords (Use a comma to separate)
-keywords: blog, food, cooking, chef, recipe, recipes, alcohol, drinks, dishes, cuisine, baking, dessert, coffee, tea
+keywords: blog, static, void, academy, program, programming, programmer, code, coding, coder, software, software engineer, develop, development, developer, python, javascript
 
 # Put your favicon.ico into `hexo-site/themes/hipaper/source/` directory.
-favicon: css/images/favicon.ico
-
+favicon: favicon.ico
 
 # Put your avatar.jpg into `hexo-site/themes/hipaper/source/` directory.
 # url is target link (E.g. `url: https://hexo.io/logo.svg` or `url: css/images/mylogo.jpg`)
 avatar:
   enable: true
-  width: 80
-  height: 80
+  width: 70
+  height: 70
   bottom: 10
-  url: Logo1.svg 
+  url: Logo.svg 
 
 # Homepage thumbnail
 random_thumb: false
@@ -41,18 +39,18 @@ widgets:
 - social
 - recent_posts
 - category
-- tag
+  #- tag
 - tagcloud
 - archive
 
 # Social Links
-# Key is the name of FontAwsome icon.
+# Key is the name of FontAwesome icon.
 # Value is the target link (E.g. GitHub: https://github.com/iTimeTraveler)
 social:
-  Instagram: https://www.instagram.com/gastro.nomist/
-  Yelp: https://www.yelp.com/user_details?userid=lZDHsHFHqtEnB8VQF9gUYw
-  TripAdvisor: https://www.tripadvisor.com/Profile/mikeyvxt
-  Google: mailto:the.ig.gastronome@gmail.com
+  GitHub: https://github.com/Static-Void-Academy
+  Medium: https://medium.com/static-void-academy
+  Graduation-Cap: https://sva.thinkific.com
+  Code: https://staticvoid.dev
 
 # Search
 search:
@@ -63,11 +61,10 @@ search:
 
 # comment ShortName, you can choose only ONE to display.
 duoshuo_shortname:
-disqus_shortname: the-gastronomist
+disqus_shortname: static-void-academy
 livere_shortname:
 uyan_uid:
 wumii:
-
 
 # Code Highlight theme
 # Available value:
@@ -82,7 +79,7 @@ show_count: true
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
-google_site_verification: FHK_lhsTlcLbPDI5IkA4bjEvJ2R6JzO66YFIP83rNwg
+google_site_verification:
 baidu_site_verification:
 qihu_site_verification:
 
