@@ -661,10 +661,18 @@ object {
 .entry-thumbnail {
 	margin: 0;
 	}
-.entry-thumbnail img {
-	display: block;
-  float: left;
-  margin-right: 20px;
+@media screen and (min-width: 507px) {
+  .entry-thumbnail img {
+    display: block;
+    float: left;
+    margin-right: 20px;
+    }
+	}
+@media screen and (max-width: 506px) {
+  .entry-thumbnail img {
+    width: 100%;
+    margin-bottom: 20px;
+    }
 	}
 .entry-content {
 	margin: 0 0 30px;

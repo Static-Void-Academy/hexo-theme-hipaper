@@ -37,3 +37,28 @@
     <% } %>
 
 </script>
+
+<!-- Copied and modified from Denis Bouquet:
+  https://www.denisbouquet.com/google-fonts-render-blocking/
+
+  Thanks Denis!
+-->
+<script type="text/javascript">
+  var fonts = 'Open+Sans|Roboto:300,300italic,400,400italic|EB+Garamond:400,400i,700,700i&display=swap|Yanone+Kaffeesatz%3A200%2C300%2C400%2C700&amp;ver=4.6.1|Oswald%3A300%2C400%2C700&amp;ver=4.6.1'
+  <% if (config.highlight.enable) { %>
+  fonts = fonts.concat('Roboto+Mono:400,500&display=swap')
+  <% } %>
+
+  WebFontConfig = {
+    google: { families: [ fonts ] }
+  };
+
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+</script>
