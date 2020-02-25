@@ -47,10 +47,10 @@ widgets:
 # Key is the name of FontAwesome icon.
 # Value is the target link (E.g. GitHub: https://github.com/iTimeTraveler)
 social:
+  Graduation-Cap: https://sva.thinkific.com
   GitHub: https://github.com/Static-Void-Academy
   Youtube: https://www.youtube.com/channel/UCD9Vpco6dO5GfYOSmipwlvg
-  Graduation-Cap: https://sva.thinkific.com
-  Code: https://www.staticvoid.dev
+  Twitter: https://twitter.com/SV_Academy
   Medium: https://medium.com/static-void-academy
 
 # Search
@@ -71,8 +71,7 @@ wumii:
 # Available value:
 #    default | normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: night
-
+highlight_theme: night bright
 
 # widget behavior
 archive_type: 'monthly'
@@ -85,7 +84,7 @@ baidu_site_verification:
 qihu_site_verification:
 
 # Miscellaneous
-google_analytics:
+google_analytics: UA-159047384-1
 gauges_analytics:
 baidu_analytics:
 tencent_analytics:

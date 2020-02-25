@@ -25,6 +25,8 @@ post_total_count_one: There is %d post.
 post_total_count: There are %d posts.
 read_more: Continue Reading →
 contents: Contents
+rights_reserved: All Rights Reserved
+site_built: Site built with
 none: None
 insight:
     hint: 'Type something...'
