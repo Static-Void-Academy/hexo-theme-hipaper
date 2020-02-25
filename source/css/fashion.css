@@ -607,7 +607,7 @@ object {
 .sticky {
 	}
 .hentry {
-	margin: 0 0 40px;
+	margin: 0 0 20px;
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
 	}
@@ -683,7 +683,7 @@ object {
 	}
 .entry-footer {
 	clear: both;
-	padding: 8px 0;
+	padding: 8px 0 16px 0;
 	border: solid #333;
 	border-width: 0 0 1px;
 	}
