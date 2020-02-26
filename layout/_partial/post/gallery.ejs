@@ -1,4 +1,10 @@
-<% if (page.photos && page.photos.length){ %>
+<% if (page.videothumb){ %>
+<div class="article-gallery">
+  <a class="article-gallery-vid" href="<%- page.videothumb %>">
+    <video src="<%- page.videothumb %>" autoplay loop muted />
+  </a>
+</div>
+<% } else if (page.photos && page.photos.length){ %>
 <div class="article-gallery">
   <div class="article-gallery-photos">
     <% page.photos.forEach(function(photo, i){ %>

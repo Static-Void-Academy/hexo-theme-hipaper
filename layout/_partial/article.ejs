@@ -36,22 +36,17 @@
             </a>
           </div>
 
-        <% } else { %>
+        <% } else if (post.photos != ""){ %>
+          <div class="entry-thumbnail">
+            <a href="<%- url_for(post.path) %>"><img width="250" height="175" src="<%= url_for(post.path) + post.photos[0] %>" alt=""></a>
+          </div>
 
-          <% if (post.photos != ""){ %>
-            <div class="entry-thumbnail">
-              <a href="<%- url_for(post.path) %>"><img width="250" height="175" src="<%= url_for(post.path) + post.photos[0] %>" alt=""></a>
-            </div>
-
-          <% } else { %>
-
-            <% if (theme.random_thumb){ %>
-              <div class="entry-thumbnail">
-                <a href="<%- url_for(post.path) %>"><img src="http://lorempixel.com/750/450/city/<%- Math.ceil(Math.random() * 10) %>" alt=""></a>
-              </div>
-            <% } %>
-          <% } %>
+        <% } else if (theme.random_thumb){ %>
+          <div class="entry-thumbnail">
+            <a href="<%- url_for(post.path) %>"><img src="http://lorempixel.com/750/450/city/<%- Math.ceil(Math.random() * 10) %>" alt=""></a>
+          </div>
         <% } %>
+
           <div class="entry-summary">
           <%- strip_html(post.excerpt) %>
 
