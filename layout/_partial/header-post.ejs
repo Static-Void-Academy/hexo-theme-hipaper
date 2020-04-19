@@ -1,11 +1,11 @@
 <% if (is_current("about", false) && theme.about_big_image){ %>
 
   <div class="site-header-image">
-    <img id="originBg" width="100%" alt="The Gastronomist" src="">
+    <img id="originBg" width="100%" alt="Static Void Academy" src="">
   </div>
 
   <div id="header-blur" class="site-header-image blur" style="position: absolute; top:0; height: 207px; min-height: 207px; min-width: 100%;">
-    <img id="blurBg" width="100%" style="top: 96%" alt="The Gastronomist" src="">
+    <img id="blurBg" width="100%" style="top: 96%" alt="Static Void Academy" src="">
   </div>
 
   <script>
@@ -29,7 +29,7 @@
       <div class="clearfix site-branding">
           <a href="<%= config.root %>" rel="home" style="width: 100%; height: 100%;">
               <% if (theme.avatar.enable){ %>
-                  <img class="site-branding-logo" style="margin-bottom: <%= theme.avatar.bottom %>px;"  width="<%= theme.avatar.width %>px" height="<%= theme.avatar.height %>px" alt="The Gastronomist" src="<% if (!(theme.avatar.url.startsWith('http') || theme.avatar.url.indexOf('://') >= 0)){ %> <%-config.root %><% } %><%- theme.avatar.url %>" />
+                  <img class="site-branding-logo" style="margin-bottom: <%= theme.avatar.bottom %>px;"  width="<%= theme.avatar.width %>px" height="<%= theme.avatar.height %>px" alt="Static Void Academy" src="<% if (!(theme.avatar.url.startsWith('http') || theme.avatar.url.indexOf('://') >= 0)){ %> <%-config.root %><% } %><%- theme.avatar.url %>" />
               <% } %>
               <h1 class="site-title">
                   <%= config.title %>

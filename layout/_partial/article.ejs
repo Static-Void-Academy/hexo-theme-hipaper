@@ -1,21 +1,5 @@
-<!-- Table of Contents -->
-<!--
-<% if (!index && is_post()){ %>
-  <aside id="sidebar">
-    <div id="toc" class="toc-article">
-    <strong class="toc-title"><%= __('contents') %></strong>
-    <% if (toc(post.content) != ""){ %>
-      <%- toc(post.content, { "class": "nav" }) %>
-    <% } else { %>
-      <ol class="nav"><%= __('none') %></ol>
-    <% } %>
-    </div>
-  </aside>
-<% } %>
--->
-
 <!-- Article Contents -->
-<article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost" >
+<article id="<%= post.layout %>-<%= post.slug %>" <% if (!index && is_post()){ %>style="width: 66%; float:left;"<% } %> class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     <%- partial('post/gallery') %>
     <% if (post.link || post.title){ %>
@@ -73,4 +57,18 @@
     <%- partial('post/nav') %>
   <% } %>
 </article>
+
+<!-- Table of Contents -->
+<% if (!index && is_post()){ %>
+  <aside id="sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title"><%= __('contents') %></strong>
+    <% if (toc(post.content) != ""){ %>
+      <%- toc(post.content, { "class": "nav" }) %>
+    <% } else { %>
+      <ol class="nav"><%= __('none') %></ol>
+    <% } %>
+    </div>
+  </aside>
+<% } %>
 
