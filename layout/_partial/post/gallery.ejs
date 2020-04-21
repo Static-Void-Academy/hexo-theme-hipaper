@@ -1,17 +1,28 @@
 <% if (page.videothumb){ %>
-<div class="article-gallery">
-  <a class="article-gallery-vid" href="<%- page.videothumb %>">
-    <video src="<%- page.videothumb %>" autoplay loop muted />
+<figure class="article-gallery">
+  <a href="<%- page.videothumb %>">
+    <video class="article-gallery-vid" src="<%- page.videothumb %>" autoplay loop muted />
   </a>
-</div>
+  <% if (page.thumb){ %>
+  <figcaption>
+    Source: <a href="<%- page.thumb.link %>"><%- page.thumb.caption %></a>
+  </figcaption>
+  <% } %>
+</figure>
 <% } else if (page.photos && page.photos.length){ %>
-<div class="article-gallery">
+<figure class="article-gallery">
   <div class="article-gallery-photos">
     <% page.photos.forEach(function(photo, i){ %>
       <a class="article-gallery-img fancybox" href="<%- photo %>" rel="gallery_<%= page._id %>">
         <img src="<%- photo %>" itemprop="image">
       </a>
+      <% if (page.thumb){ %>
+      <figcaption>
+        Source: <a href="<%- page.thumb.link %>"><%- page.thumb.caption %></a>
+      </figcaption>
+      <% } %>
     <% }) %>
   </div>
-</div>
+</figure>
 <% } %>
+
