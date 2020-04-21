@@ -517,23 +517,9 @@ $article-gallery-ctrl
 
 
 /*toc*/
-.toc-article
-  border-left: rgba(88,88,88,0.1) 1px solid
-  padding 1em 0 0 1em
-  margin-left: 1em
-  font-size: 2em
-
-.toc-title
-  font-size 120%
-  &:before
-    font-family: "FontAwesome"
-    content: "\f0ca"
-    margin-right: .5em
-
 #toc
   width: 100%
-  line-height 1em
-  font-size 1em
+  font-size 1.2em
   float left
   overflow: hidden
   @media mq-mobile
@@ -541,13 +527,28 @@ $article-gallery-ctrl
   @media mq-tablet
     display: none
 
+.toc-article
+  padding 0 0 0 1em
+  margin-left: 1em
+  font-size: 2em
+
 .toc-fixed
-  position: fixed;
-  width: inherit !important
-  top: 30px;
-  margin-top: 0;
-  overflow: hidden;
-  z-index: 1;
+  padding 1em 0 0 1em
+  margin-left: 1em
+  font-size: 2em
+  width: 22% !important
+  position: fixed
+  top: 5px
+/*  margin-top: 0 */
+/*  overflow: hidden */
+/*  z-index: 1 */
+
+.toc-title
+  font-size 150%
+  &:before
+    font-family: "FontAwesome"
+    content: "\f0ca"
+    margin-right: .5em
 
 .nav
   padding 0

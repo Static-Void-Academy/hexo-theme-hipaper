@@ -1,5 +1,5 @@
 <!-- Article Contents -->
-<article id="<%= post.layout %>-<%= post.slug %>" <% if (!index && is_post()){ %>style="width: 66%; float:left;"<% } %> class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
+<article id="<%= post.layout %>-<%= post.slug %>" <% if (!index && is_post()){ %>style="width: 66%; float:right;"<% } %> class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     <%- partial('post/gallery') %>
     <% if (post.link || post.title){ %>
@@ -71,4 +71,3 @@
     </div>
   </aside>
 <% } %>
-

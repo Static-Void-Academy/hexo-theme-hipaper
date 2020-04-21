@@ -8,6 +8,7 @@ menu:
   Archives: archives
   Categories: categories
   Tags: tags
+  Course: https://sva.thinkific.com
   About: about
 rss: /atom.xml
 
@@ -33,9 +34,9 @@ random_thumb: false
 fancybox: true
 
 # Sidebar
-sidebar: right
+sidebar: left
 widgets:
-- search
+  #- search
 - social
 - recent_posts
 - category
