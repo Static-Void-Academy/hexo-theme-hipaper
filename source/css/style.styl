@@ -86,8 +86,22 @@ body
       -moz-transform: scale(1.4, 3.2);
       transform: scale(1.4, 3.2); } 
 
+li.search-menu-item
+  @media screen and (max-width: 60em)
+    display: none !important
+
+.search-menu-item-mobile
+  @media screen and (min-width: 60.1em)
+    display: none !important
+
 #search-form-wrap 
-  width: 155%
+  margin: 0
+  @media screen and (max-width: 60em)
+    width: 100%
+    margin-bottom: 12px
+  @media screen and (min-width: 60.1em)
+    width: 155%
+
 input#search-input
   font-family: 'FontAwesome'
 

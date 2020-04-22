@@ -26,35 +26,35 @@
 <header id="allheader" class="site-header" role="banner"
   <% if (is_current("about", false) && theme.about_big_image){ %> style="width: 100%; position: absolute; top:0; background: rgba(255,255,255,.8);" <% } %> >
   <div class="clearfix container">
-      <div class="clearfix site-branding">
-          <a href="<%= config.root %>" rel="home" style="width: 100%; height: 100%;">
-              <% if (theme.avatar.enable){ %>
-                  <img class="site-branding-logo" style="margin-bottom: <%= theme.avatar.bottom %>px;"  width="<%= theme.avatar.width %>px" height="<%= theme.avatar.height %>px" alt="Static Void Academy" src="<% if (!(theme.avatar.url.startsWith('http') || theme.avatar.url.indexOf('://') >= 0)){ %> <%-config.root %><% } %><%- theme.avatar.url %>" />
-              <% } %>
-              <h1 class="site-title">
-                  <%= config.title %>
-              </h1>
-              <% if (config.subtitle){ %>
-                  <div class="site-description"><%= config.subtitle %></div>
-              <% } %>
-          </a>
-      </div>
-      <nav id="main-navigation" class="main-navigation" role="navigation">
-        <a class="nav-open">Menu</a>
-        <a class="nav-close">Close</a>
+    <div class="clearfix site-branding">
+      <a href="<%= config.root %>" rel="home" style="width: 100%; height: 100%;">
+        <% if (theme.avatar.enable){ %>
+        <img class="site-branding-logo" style="margin-bottom: <%= theme.avatar.bottom %>px;"  width="<%= theme.avatar.width %>px" height="<%= theme.avatar.height %>px" alt="Static Void Academy" src="<% if (!(theme.avatar.url.startsWith('http') || theme.avatar.url.indexOf('://') >= 0)){ %> <%-config.root %><% } %><%- theme.avatar.url %>" />
+        <% } %>
+        <h1 class="site-title">
+          <%= config.title %>
+        </h1>
+        <% if (config.subtitle){ %>
+          <div class="site-description"><%= config.subtitle %></div>
+        <% } %>
+      </a>
+    </div>
+    <nav id="main-navigation" class="main-navigation" role="navigation">
+      <a class="nav-open">Menu</a>
+      <a class="nav-close">Close</a>
 
-        <div class="clearfix sf-menu">
-          <ul id="main-nav" class="menu sf-js-enabled sf-arrows"  style="touch-action: pan-y;">
-            <% for (var i in theme.menu){ %>
-            <li class="menu-item"> <a class="" href="<%- url_for(theme.menu[i]) %>"><%= __(i.toLowerCase()) %></a> </li>
-            <% } %>
-            <li class="search-menu-item">
-              <a>
-                <%- partial('search/index') %>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="clearfix sf-menu">
+        <ul class="menu sf-js-enabled sf-arrows"  style="touch-action: pan-y;">
+          <% for (var i in theme.menu){ %>
+          <li class="menu-item"> <a class="" href="<%- url_for(theme.menu[i]) %>"><%= __(i.toLowerCase()) %></a> </li>
+          <% } %>
+          <li class="search-menu-item">
+            <a>
+              <%- partial('search/index') %>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </div>
 </header>
