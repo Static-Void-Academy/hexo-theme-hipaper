@@ -484,10 +484,10 @@ figure.article-gallery
     width: 100%
     margin: 0 auto
 
-/*toc*/
+/* Table of Contents in posts */
 #toc
-  width: 100%
   font-size 1.2em
+  padding-left: 5px
   float left
   overflow: hidden
   @media mq-mobile
@@ -496,17 +496,16 @@ figure.article-gallery
     display: none
 
 .toc-article
-  padding 0 0 0 1em
   margin-left: 1em
   font-size: 2em
 
 .toc-fixed
-  padding 1em 0 0 1em
-  margin-left: 1em
-  font-size: 2em
-  width: 22% !important
   position: fixed
   top: 5px
+  @media mq-larger
+    width: 288px
+  @media mq-smaller
+    width: 25%
 /*  margin-top: 0 */
 /*  overflow: hidden */
 /*  z-index: 1 */
@@ -520,7 +519,7 @@ figure.article-gallery
 
 .nav
   padding 0
-  margin 1em
+  margin 1em 0 0 1em
   line-height 1.8em
   li
   list-style-type none
@@ -539,3 +538,7 @@ figure.article-gallery
 .nav-child
   margin-left 1.0em
 
+span.nav-text
+  &:before
+    font-family: "FontAwesome"
+    content: "\f105\00a0"

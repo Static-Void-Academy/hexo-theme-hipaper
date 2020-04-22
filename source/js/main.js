@@ -15,14 +15,12 @@ if (!hasCurrent) {
 	$('#main-nav > li:first').addClass('current-menu-item current_page_item');
 }
 
-
-
 // article toc
 var toc = document.getElementById('toc')
 
 if (toc != null) {
 	window.addEventListener("scroll", scrollcatelogHandler);
-	var tocPosition = 194+25;
+	var tocPosition = 180;
 
 	function scrollcatelogHandler(e) {
 		 var event = e || window.event,
