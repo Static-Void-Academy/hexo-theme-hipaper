@@ -24,7 +24,7 @@
         <% if (is_post()){ %>
         <aside id="sidebar">
           <div id="toc" class="toc-article">
-            <strong class="toc-title"><%= __('contents') %></strong>
+            <div class="toc-title widget-title"><%= __('contents') %></div>
             <% if (toc(page.content) != ""){ %>
               <%- toc(page.content, { "class": "nav", "list_number": false }) %>
             <% } else { %>
