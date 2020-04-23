@@ -17,12 +17,18 @@
   border: 0px solid color-border
 
 .article-image-left
-  float: left
-  height: 35%
-  width: 35%
-  padding-right: 20px
   figcaption
     font-size: 0.9em
+  @media mq-normal
+    float: left
+    height: 35%
+    width: 35%
+    padding-right: 20px
+  @media mq-mobile
+    display: block
+    margin-left: auto
+    margin-right: auto
+    width: 70%
 
 .article-image-center
   display: block
