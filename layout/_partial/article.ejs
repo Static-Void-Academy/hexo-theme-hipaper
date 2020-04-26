@@ -1,6 +1,6 @@
 <!-- Article Contents -->
 <article id="<%= post.layout %>-<%= post.slug %>" <% if (!index && is_post()){ %><% } %> class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
-  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+  <div class="clearfix hentry article-inner-div">
     <%- partial('post/gallery') %>
     <% if (post.link || post.title){ %>
       <header class="article-header">
